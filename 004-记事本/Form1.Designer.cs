@@ -60,13 +60,14 @@
             status_bar = new ToolStripMenuItem();
             AutoLM = new ToolStripMenuItem();
             txtEditor = new TextBox();
+            toolStripMenuItem1 = new ToolStripMenuItem();
             menu.SuspendLayout();
             SuspendLayout();
             // 
             // menu
             // 
             menu.ImageScalingSize = new Size(20, 20);
-            menu.Items.AddRange(new ToolStripItem[] { menuFile, menuFileEdit, menuFileCheck });
+            menu.Items.AddRange(new ToolStripItem[] { menuFile, menuFileEdit, menuFileCheck, toolStripMenuItem1 });
             menu.Location = new Point(0, 0);
             menu.Name = "menu";
             menu.Size = new Size(907, 28);
@@ -249,7 +250,7 @@
             // 
             zoom.DropDownItems.AddRange(new ToolStripItem[] { large, small, back_to_default });
             zoom.Name = "zoom";
-            zoom.Size = new Size(152, 26);
+            zoom.Size = new Size(224, 26);
             zoom.Text = "缩放";
             zoom.Click += zoom_Click;
             // 
@@ -277,14 +278,14 @@
             // status_bar
             // 
             status_bar.Name = "status_bar";
-            status_bar.Size = new Size(152, 26);
+            status_bar.Size = new Size(224, 26);
             status_bar.Text = "状态栏";
             status_bar.Click += status_bar_Click;
             // 
             // AutoLM
             // 
             AutoLM.Name = "AutoLM";
-            AutoLM.Size = new Size(152, 26);
+            AutoLM.Size = new Size(224, 26);
             AutoLM.Text = "自动换行";
             AutoLM.Click += AutoLM_Click;
             // 
@@ -297,6 +298,12 @@
             txtEditor.ScrollBars = ScrollBars.Both;
             txtEditor.Size = new Size(907, 581);
             txtEditor.TabIndex = 1;
+            // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(27, 24);
+            toolStripMenuItem1.Text = " ";
             // 
             // mainview
             // 
@@ -348,5 +355,6 @@
         private ToolStripMenuItem menuFileF5;
         private ToolStripMenuItem menuFormatFont;
         private TextBox txtEditor;
+        private ToolStripMenuItem toolStripMenuItem1;
     }
 }
